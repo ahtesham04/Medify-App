@@ -1,0 +1,7 @@
+.promoContent{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
