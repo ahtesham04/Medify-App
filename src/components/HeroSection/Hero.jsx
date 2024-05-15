@@ -6,7 +6,7 @@ import './hero.css'
 const Hero = () => {
   return (
     <div className='row align-items-center'>
-      <div className='col-lg-7'>
+      <div className='col-lg-6'>
         {/* <div className='headingContent'>
         <h2 className='heading'>Skip the travel! Find Online</h2>
         <h1 className='subHeading'>Medical Centers</h1>

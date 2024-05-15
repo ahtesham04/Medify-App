@@ -2,6 +2,7 @@
     height: 350px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #fff;
+    /* align-items: center;
+    background-color: #fff; */
+    padding-top: 84px;
 }

@@ -1,0 +1,83 @@
+.textContainer{
+/* width: 532px; */
+height: 175px;
+/* top: 1383px;
+left: 454px; */
+/* gap: 0px;
+opacity: 0px; */
+/* margin: 25px auto */
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+
+}
+
+.textContainer h2{
+font-family: Poppins;
+font-size: 48px;
+font-weight: 600;
+line-height: 67px;
+/* text-align: center; */
+color: #1B3C74;
+}
+
+
+
+.serviceContained{
+/* width: 1449px; */
+height: 377px;
+/* top: 1327px; */
+/* left: -5px; */
+/* gap: 0px;
+opacity: 0px; */
+/* background: linear-gradient(81deg, #E7F0FF 9.01%, rgba(232, 241, 255, 0.47) 89.11%); */
+
+
+
+}
+
+.serviceCard{
+width: 270px;
+height:180px;
+top: 1512px;
+left: 135px;
+padding: 22px 70px 22px 70px;
+gap: 0px;
+border-radius: 10px 0px 0px 0px;
+/* justify-content: space-between; */
+opacity: 0px;
+background: #FFFFFF;
+box-shadow: 0px 34px 44px 0px #D5DBE470;
+
+
+}
+.serviceImg{
+    width:138px;
+height: 127px;
+gap: 20px;
+opacity: 0px;
+
+}
+
+.serviceBtn{
+    
+ width: 147px;
+height: 50px;
+top: 1950px;
+left: 646px;
+/* gap: 0px; */
+border-radius: 8px;
+/* opacity: 0px; */
+background: #2AA8FF;
+
+
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}

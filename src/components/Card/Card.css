@@ -1,0 +1,66 @@
+.drCard{
+    /* width: 370px; */
+    /* height: 504px; */
+    /* left: 570px;
+    gap: 0px;
+    opacity: 0px; */
+    /* background: #FFFFFF; */
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+    
+}
+
+.drImg{
+    width: 350px;
+height: 414px;
+/* padding: 10px 0px 0px 0px;
+gap: 0px; */
+border-radius: 250px 250px 8px 8px;
+/* opacity: 0px;
+box-shadow: 0px 15px 55px -10px #00000017; */
+
+}
+
+.drText{
+width: 370px;
+height: 75px;
+top: 429px;
+padding: 0px 62.94px 0px 64.06px;
+/* gap: 0px;
+opacity: 0px; */
+
+}
+
+.drName{
+    width: 243px;
+height: 48px;
+top: -0.5px;
+left: 64.06px;
+gap: 0px;
+opacity: 0px;
+font-family: Poppins;
+font-size: 24px;
+font-weight: 400;
+line-height: 48px;
+text-align: center;
+color: #1B3C74;
+margin: 0px !important;
+}
+
+.drSubText{
+width: 93px;
+height: 27px;
+top: 48.5px;
+left: 138.42px;
+gap: 0px;
+opacity: 0px;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+line-height: 27px;
+text-align: center;
+color: #2AA7FF;
+margin-bottom: 40px;
+}
