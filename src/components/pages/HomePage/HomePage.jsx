@@ -16,7 +16,7 @@ const HomePage = () => {
   return (
     <div>
         <div className='section1'>
-        <Navbar />
+        <Navbar type="home"/>
       <Hero />
         </div>
         <Search />

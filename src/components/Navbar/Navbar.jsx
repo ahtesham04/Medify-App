@@ -2,7 +2,7 @@ import React from 'react';
 import logoImg from '../../assets/logo.png';
 import './navbar.css'
 
-const Navbar = () => {
+const Navbar = ({type}) => {
   return (
     <div className='container'>
     <div className='d-flex navContent align-items-center'>

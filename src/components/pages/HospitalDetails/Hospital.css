@@ -6,3 +6,9 @@ line-height: 36px;
 /* text-align: center; */
 
 }
+
+.headerBar{
+    height:110px;
+    border-radius: 0 0 16px 16px;
+    background: linear-gradient(91.75deg, #2AA7FF 1.4%, #0C8CE6 100.57%);
+}
