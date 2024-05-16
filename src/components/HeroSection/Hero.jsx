@@ -5,6 +5,7 @@ import './hero.css'
 
 const Hero = () => {
   return (
+    <div className='container'>
     <div className='row align-items-center'>
       <div className='col-lg-6'>
         {/* <div className='headingContent'>
@@ -21,6 +22,7 @@ const Hero = () => {
       <div className='col-lg-5'>
         <img src={docImg} alt="doctor img" />
       </div>
+    </div>
     </div>
   )
 }

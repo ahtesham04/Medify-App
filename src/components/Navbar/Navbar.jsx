@@ -4,6 +4,7 @@ import './navbar.css'
 
 const Navbar = () => {
   return (
+    <div className='container'>
     <div className='d-flex navContent align-items-center'>
       <div className='col-4'><img src={logoImg} /></div>
       <div className='d-flex justify-content-between col-8 align-items-center'>
@@ -15,6 +16,7 @@ const Navbar = () => {
         <div className='navList'>Facilities</div>
         <div><button className='navBtn'>My Bookings</button></div>
       </div>
+    </div>
     </div>
   )
 }

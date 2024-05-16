@@ -5,7 +5,7 @@ import './Specialist.css'
 
 const Specialist = () => {
   return (
-    <div>
+    // <div>
       
     <div className='drContainer'>
     <div className='textContainer'>
@@ -14,7 +14,7 @@ const Specialist = () => {
         <Carausel allData={drSpecialist} type='specialist' />
       
     </div>
-    </div>
+    // </div>
   )
 }
 

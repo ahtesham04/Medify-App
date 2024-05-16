@@ -1,0 +1,102 @@
+.searchContainer{
+    position: absolute;
+    width: 1170px;
+height: 429px;
+top: 530px;
+left: 135px;
+border: 1px solid #F0F0F0;
+z-index: 10;
+background-color: #fff;
+box-shadow: 6px 6px 35px 0px #1028511C;
+border-radius: 15px;
+}
+.searchField{
+    position: relative;
+}
+.dropdown{
+    width:285px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #f0f0f0;
+}
+.sIcon{
+    position: absolute;
+    z-index: 100;
+    top: 15px;
+    
+}
+.searchBox{
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+select{
+    padding-left: 24px;
+}
+
+.searchBtn{
+width: 121px;
+height: 50px;
+color: #fff;
+border-radius: 8px;
+background: #2AA8FF;
+border: 1px solid #2AA8FF;
+}
+
+.cardService{
+font-family: Poppins;
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0.02em;
+text-align: left;
+color: #102851;
+
+}
+
+.drCards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+width: 203px;
+height: 153px;
+/* gap: 0px; */
+border-radius: 8px 0px 0px 0px;
+/* opacity: 0px; */
+color:#FAFBFE
+
+}
+
+drImgs{
+width: 60px;
+height: 60px;
+
+}
+
+.drCards h6{
+    /* width: 89px; */
+height: 27px;
+
+    color: #ABB6C7;
+
+font-family: Poppins;
+font-size: 18px;
+font-weight: 600;
+line-height: 27px;
+letter-spacing: 0.02em;
+text-align: center;
+
+
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26px;
+    gap: 10px
+}

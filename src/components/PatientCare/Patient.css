@@ -1,0 +1,122 @@
+.patientMain{
+/* width: 1449px; */
+height: 598px;
+
+/* margin-top: 160px; */
+background:linear-gradient(81deg, #E7F0FF 9.01%, rgba(232, 241, 255, 0.47) 89.11%);
+}
+
+.patientImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 52px;
+    /* width: 519px;
+height: 486px;
+top: 2935px;
+left: 138px;
+gap: 0px;
+border-radius: 8px 0px 0px 0px;
+opacity: 0px; */
+/* border: 5px solid #FFFFFF */
+}
+
+.patientDetails{
+width: 563px;
+height: 375px;
+top: 2990px;
+left: 728px;
+gap: 0px;
+opacity: 0px;
+
+}
+
+.patientDetails h5{
+    width: 408;
+height: 27px;
+top: 2990px;
+left: 728px;
+gap: 0px;
+opacity: 0px;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 600;
+line-height: 27px;
+text-align: left;
+color:#2AA7FF;
+
+}
+
+.patientDetails h2{
+width: 352px;
+height: 67px;
+top: 3017px;
+left: 728px;
+gap: 0px;
+opacity: 0px;
+font-family: Poppins;
+font-size: 48px;
+font-weight: 600;
+line-height: 67px;
+text-align: left;
+
+
+}
+
+.caringSpan{
+    font-family: Poppins ;
+font-size: 48px;
+font-weight: 600;
+line-height: 67px;
+text-align: left;
+color: #2AA7FF;
+
+}
+.para{
+    /* width: 563px; */
+height: 87px;
+top: 3104px;
+left: 728px;
+gap: 0px;
+opacity: 0px;
+font-family: Inter;
+font-size: 17px;
+font-weight: 500;
+line-height: 29px;
+text-align: left;
+color:#77829D;
+
+}
+
+
+
+.iconContent{
+    display: flex;
+    
+    /* width: 308px; */
+height: 27px;
+
+padding: 0px 19px 0px 0px;
+gap: 10px;
+
+
+}
+.iconContent p{
+    /* font-family: Roboto !important; */
+font-size: 18px !important ;
+font-weight: 500 !important ;
+line-height: 27px !important;
+text-align: left !important ;
+color:#1B3C74 !important;
+
+}
+
+
+.iconImg{
+width: 20px;
+height: 20px;
+gap: 0px;
+opacity: 0px;
+
+
+}

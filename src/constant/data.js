@@ -40,3 +40,6 @@ export const drSpecialist = [
         imgUrl:dr3
     }
 ]
+//'Our Pricing','Our Gallery','Appointment'
+export const footerList = ['About Us','Orthology','About Us','Our Pricing','Neurology','Our Pricing','Our Gallery',
+                    'Dental Care','Our Gallery','Appointment','Opthalmology','Appointment','Privacy Policy','Cardiology','Privacy Policy']
