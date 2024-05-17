@@ -43,3 +43,34 @@ export const drSpecialist = [
 //'Our Pricing','Our Gallery','Appointment'
 export const footerList = ['About Us','Orthology','About Us','Our Pricing','Neurology','Our Pricing','Our Gallery',
                     'Dental Care','Our Gallery','Appointment','Opthalmology','Appointment','Privacy Policy','Cardiology','Privacy Policy']
+
+export const slotAvailable =[
+                        {
+                            slotCount:17,
+                            date:0
+                        },
+                        {
+                            slotCount:10,
+                            date:1
+                        },
+                        {
+                            slotCount:7,
+                            date:2
+                        },
+                        {
+                            slotCount:5,
+                            date:3
+                        },
+                        {
+                            slotCount:4,
+                            date:4
+                        },
+                        {
+                            slotCount:11,
+                            date:5
+                        },
+                        {
+                            slotCount:11,
+                            date:6
+                        }
+                    ]

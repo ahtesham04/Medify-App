@@ -1,0 +1,33 @@
+.leftBtn{
+    position: absolute;
+    left: 0px;
+    z-index: 1000;
+    bottom: 4px;
+        width: 40px;
+        height: 40px;
+        /* border: 1px solid black; */
+        border-radius: 50%;
+        border: 1px solid #E0E0E4
+}
+
+.rightBtn{
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+    bottom: 4px;
+    width: 40px;
+    height: 40px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    border: 1px solid #E0E0E4
+}
+
+.slotText{
+    font-family: Lato;
+font-size: 12px;
+font-weight: 400;
+line-height: 16.8px;
+text-align: center;
+color: #01A400;
+
+}

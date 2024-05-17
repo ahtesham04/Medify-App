@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom'
 import './Hospital.css'
 import MedicalCard from '../../MedicalCard/MedicalCard';
 import Navbar from '../../Navbar/Navbar'
+import sensodyne from '../../../assets/sensodyne_dweb.png.png'
 
 const HospitalDetails = () => {
   const location = useLocation();
@@ -20,7 +21,12 @@ const HospitalDetails = () => {
     <div className='col-8'>
       {hospitalData.length>0 ? (hospitalData.map(item => <MedicalCard data={item} />)) : ('No Data Available')}
     </div>
-    <div className='col-4'></div>
+    <div className='col-4'>
+      <div className='card'>
+      <img src={sensodyne} alt='sensodyne'/>
+      </div>
+      
+    </div>
     </div>
 </div>
     </div>
