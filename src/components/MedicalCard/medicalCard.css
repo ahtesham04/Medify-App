@@ -2,7 +2,7 @@
     min-height: 269px;
     width: 850px;
     border-radius: 15px;
-    padding: 50px 2px 12px 35px;
+    padding: 50px 35px 12px 35px;
     margin-bottom: 20px;
 }
 
@@ -31,6 +31,10 @@ font-weight: 500;
 line-height: 21px;
 text-align: center;
 color:#fff;
+}
+
+.bookBtn:active{
+    background-color: blue;
 }
 
 .hName{
@@ -68,10 +72,19 @@ padding: 2px 2px 2px 22px;
 /* gap: 0px; */
 border-radius: 3px;
 border: 1px solid #2AA7FF;
+cursor: pointer;
+color: #2AA7FF;
+}
 
+.time:hover{
+    background-color: #2AA7FF;
+    color: #fff;
+}
+.time:hover{
+    background-color: blue;
 }
 
 .swiper-slide{
     width: 90px !important;
-    margin-left: 150px !important;
+    margin-left: 125px !important;
 }

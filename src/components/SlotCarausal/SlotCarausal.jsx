@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 
 // Import Swiper styles
@@ -36,7 +36,13 @@ const getDateValue = (n) =>{
     return formattedDate;
 }
 // getDateValue(3)
-const SlotCarausal = () => {
+const SlotCarausal = ({bookingDate}) => {
+  const[isActive, setIsActive] = useState(false);
+  const dateHandler = (currDate,d) =>{
+    slotAvailable.forEach(item => item.isActive = false);
+    d.isActive = !d.isActive;
+    bookingDate(currDate);
+  }
   return (
 <>
       <Swiper
@@ -49,7 +55,7 @@ const SlotCarausal = () => {
         <Controls data = {slotAvailable} />
         <CarauselLeftBtn />
         <CarauselRightBtn />
-        {slotAvailable.map(d => <SwiperSlide>{getDateValue(d.date)}<p className='slotText'>{d.slotCount} slots available</p></SwiperSlide>)}
+        {slotAvailable.map(d => <SwiperSlide className={d.isActive ? ("activeTab"):("tab")} onClick={() => dateHandler(getDateValue(d.date),d)}>{getDateValue(d.date)}<p className='slotText'>{d.slotCount} slots available</p></SwiperSlide>)}
         {/* <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
