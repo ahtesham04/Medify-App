@@ -84,7 +84,8 @@ const getHospitalData = async() =>{
       </div>
         </div>
       </div>
-<div className='container mainContent'>
+      <div className='mainContent'>
+<div className='container'>
     <h2 className='headerText' style={{marginTop:"90px"}}>{medicalCenters?.length} medical centers available in {medicalCenters[0]?.State}</h2>
     <p className='notify'><img src={vIcon} alt='vIcon' />Book appointments with minimum wait-time & verified doctor details</p>
     <div className='row'>
@@ -98,6 +99,7 @@ const getHospitalData = async() =>{
       
     </div>
     </div>
+</div>
 </div>
 <Faq />
 <Footer />

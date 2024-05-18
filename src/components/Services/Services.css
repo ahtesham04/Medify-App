@@ -44,20 +44,21 @@ height:180px;
 top: 1512px;
 left: 135px;
 padding: 22px 70px 22px 70px;
-gap: 0px;
+/* gap: 0px; */
 border-radius: 10px 0px 0px 0px;
 /* justify-content: space-between; */
-opacity: 0px;
+/* opacity: 0px; */
 background: #FFFFFF;
 box-shadow: 0px 34px 44px 0px #D5DBE470;
 
 
 }
+
 .serviceImg{
     width:138px;
 height: 127px;
 gap: 20px;
-opacity: 0px;
+/* opacity: 0px; */
 
 }
 

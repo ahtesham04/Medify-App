@@ -20,7 +20,7 @@ const Service = () => {
         <div className='row g-3'>
             <div className='col-3'>
                 <div className='serviceCard'>
-                    1<img alt="img" className='serviceImg' src={simg1} />
+                    <img alt="img" className='serviceImg' src={simg1} />
 
                 </div>
 

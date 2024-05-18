@@ -64,9 +64,17 @@ color: #102851;
 width: 203px;
 height: 153px;
 /* gap: 0px; */
-border-radius: 8px 0px 0px 0px;
+border-radius: 8px;
 /* opacity: 0px; */
 color:#FAFBFE
+
+}
+
+.drCards:hover{
+    border: 1px solid #2AA7FF;
+    /* background: #2AA7FF */
+    background: hsba(205, 84%, 100%, 0.08);
+
 
 }
 

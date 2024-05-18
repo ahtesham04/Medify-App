@@ -85,8 +85,8 @@ color: #2AA7FF;
 }
 
 .swiper-slide{
-    width: 90px !important;
-    margin-left: 125px !important;
+    /* width: 90px !important;
+    margin-left: 125px !important; */
 }
 
 .fees{
