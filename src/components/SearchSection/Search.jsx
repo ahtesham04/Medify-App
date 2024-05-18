@@ -7,6 +7,7 @@ import drImg2 from '../../assets/Hospital.png';
 import drImg3 from '../../assets/Capsule.png';
 import drImg4 from '../../assets/Ambulance.png';
 import { useNavigate } from 'react-router-dom';
+import sIcon from '../../assets/IconS.png'
 
 const Search = () => {
   const[stateList, setStateList] = useState([]);
@@ -63,7 +64,7 @@ const getHospitalData = async() =>{
           </select>
           </div>
           <div>
-            <button onClick={getHospitalData} className='searchBtn'>Search</button>
+            <button onClick={getHospitalData} className='searchBtn'><img src={sIcon} alt='sIcon' />Search</button>
           </div>
           <div>
           

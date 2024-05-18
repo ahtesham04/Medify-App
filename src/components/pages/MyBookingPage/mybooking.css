@@ -1,0 +1,82 @@
+.headerText{
+    font-family: Poppins;
+font-size: 24px;
+font-weight: 500;
+line-height: 36px;
+/* text-align: center; */
+
+}
+
+.headerBar{
+    height:110px;
+    border-radius: 0 0 16px 16px;
+    background: linear-gradient(91.75deg, #2AA7FF 1.4%, #0C8CE6 100.57%);
+}
+
+.bookingText{
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45.96px;
+    /* text-align: center; */
+    color: #fff;
+    
+}
+
+.headerContainer{
+    padding-top: 30px;
+    position: relative;
+}
+
+.searchBar{
+    width: 780px;
+height: 104px;
+top: 176px;
+left: 521px;
+padding: 27px 24px 27px 24px;
+/* gap: 29px; */
+border-radius: 15px;
+box-shadow: 6px 6px 35px 0px #1028511C;
+position: absolute;
+right: 0;
+top: 30px;
+background-color: #fff;
+}
+
+.headerSearch{
+    width: 545px;
+    height: 50px;
+    /* gap: 0px; */
+    border-radius: 8px;
+    /* border: 1px; */
+    border: 1px solid #F0F0F0;
+    margin-left: 22px;
+}
+
+::placeholder{
+    font-family: Poppins;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0.02em;
+text-align: left;
+color: #ABB6C7;
+padding-left: 20px;
+}
+
+.searchB{
+    width: 177px;
+height: 50px;
+/* gap: 0px; */
+border-radius: 8px;
+background: #2AA8FF;
+margin-left: 20px;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.02em;
+/* text-align: left; */
+color: #fff;
+border: 1px solid #2AA8FF;
+}

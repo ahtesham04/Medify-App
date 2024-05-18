@@ -20,50 +20,50 @@ const Service = () => {
         <div className='row g-3'>
             <div className='col-3'>
                 <div className='serviceCard'>
-                    <img className='serviceImg' src={simg1} />
+                    1<img alt="img" className='serviceImg' src={simg1} />
 
                 </div>
 
             </div>
             <div className='col-3'>
             <div className='serviceCard'>
-                    <img  src={simg2} />
+                    <img alt="img"  src={simg2} />
 
                 </div>
             </div>
             <div className='col-3'>
             <div className='serviceCard'>
-                    <img  src={simg3} />
+                    <img alt="img"  src={simg3} />
 
                 </div>
             </div>
             <div className='col-3'>
             <div className='serviceCard'>
-                    <img  src={simg4} />
+                    <img alt="img"  src={simg4} />
 
                 </div>
             </div>
             <div className='col-3'>
             <div className='serviceCard'>
-                    <img  src={simg5} />
+                    <img alt="img"  src={simg5} />
 
                 </div>
             </div>
             <div className='col-3'>
             <div className='serviceCard'>
-                    <img  src={simg6} />
+                    <img alt="img"  src={simg6} />
 
                 </div>
             </div>
             <div className='col-3'>
             <div className='serviceCard'>
-                    <img  src={simg7} />
+                    <img alt="img"  src={simg7} />
 
                 </div>
             </div>
             <div className='col-3'>
             <div className='serviceCard'>
-                    <img  src={simg8} />
+                    <img alt="img"  src={simg8} />
 
                 </div>
             </div>

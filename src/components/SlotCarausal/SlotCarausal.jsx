@@ -31,8 +31,12 @@ const getDateValue = (n) =>{
     console.log(date.toString().split(" "))
     let dateArr =date.toString().split(" ")
     let day = date.getDate()+n
-    console.log(day)
-    let formattedDate = `${dateArr[0]} ${day}, ${dateArr[1]}`
+    let month = date.getMonth();
+    let year = date.getFullYear()
+    // console.log(day)
+    let nextDate = new Date(year,month,day)
+    let nextArr =nextDate.toString().split(" ")
+    let formattedDate = `${nextArr[0]} ${day}, ${nextArr[1]}`
     return formattedDate;
 }
 // getDateValue(3)
