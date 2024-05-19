@@ -1,5 +1,4 @@
 .familyContainer{
-/* width: 1449px; */
 height: 789px;
 background:linear-gradient(81deg, #E7F0FF 9.01%, rgba(232, 241, 255, 0.47) 89.11%);
 }
@@ -12,8 +11,6 @@ display: flex;
 flex-direction: column;
 justify-content:center ;
 align-items:center;
-/* width: 575px;
-height: 714px; */
 
 }
 .familyLeft h5{
@@ -59,7 +56,5 @@ color: #77829D;
 }
 
 .familyRight{
-    /* width: 585px; */
-/* height: 714px; */
 padding-top: 25px;
 }

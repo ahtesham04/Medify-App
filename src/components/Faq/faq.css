@@ -1,21 +1,10 @@
-.accordion-button ,.collapsed,.accordion-body {
-    /* background-color: #1d1d1d !important; */
-    /* color: #ffffff m !important; */
-}
-
-.accordion-body{
-    /* color: #ffffff !important; */
-    /* opacity: 0.3; */
-}
 
 .accordion-button::after{
-    background-image: url('../../assets/plusicon.png') !important;
-    /* background-color: #e3b748 !important; */
+    background-image: url('../../assets/plusicon.png') !important; 
 }
 
 .accordion-button:not(.collapsed)::after{
     background-image: url('../../assets/dash.svg') !important;
-    /* background-color: #e3b748 !important; */
 }
 
 .accordion-header{
@@ -32,7 +21,6 @@ text-align: left !important;
 }
 
 .faqMainContainer{
-    /* width: 1140px; */
 height: 708.84px;
 
 background-color: #fff;
@@ -93,9 +81,5 @@ height: 499.84px;
 .fooImg{
 width: 126.77px;
 height: 36px;
-top: 41px;
-left: 10px;
-gap: 0px;
-opacity: 0px;
 }
 
