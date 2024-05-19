@@ -28,6 +28,7 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 ### Project Details
+
 Tech stack used - HTML, CSS, Bootstrap, React, Swiper JS.
 
 1. Project Layout created with the help of Bootstrap.
@@ -37,4 +38,4 @@ Tech stack used - HTML, CSS, Bootstrap, React, Swiper JS.
 5. In details page, on click card slot booking interface will come and user can book slot for max 7 days in advance with booking time.
 6. Slot booking data will store in local storage and same data user can see in mybooking page.
 7. In top navigation bar, user can navigate to different web page, find doctors will navigate to hospital details page, mybooking will navigate to booking details page and logo will navigate to home page.
- 
+8. Some static datas for booking slot card and other cards are saved in constant/data.js file

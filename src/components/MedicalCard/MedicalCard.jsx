@@ -3,7 +3,8 @@ import './medicalCard.css';
 import medical from '../../assets/div.u-pos-has.png';
 import like from '../../assets/Vector (1).png'
 import SlotCarausal from '../SlotCarausal/SlotCarausal';
-import rupees from '../../assets/currency.png'
+import rupees from '../../assets/currency.png';
+import {availableSlotTime} from '../../constant/data';
 const getLocalStorageData = () =>{
   let data = JSON.parse(localStorage.getItem("myBooking"))
   console.log(data,'data')
@@ -16,7 +17,8 @@ const MedicalCard = ({data}) => {
 const[showBooking, setShowBooking] = useState(false);
 const[bookingTime, setBookingTime] = useState('')
 const[bookingDate, setBookingDate] = useState('')
-const[bookingData, setBookingData] = useState(getLocalStorageData())
+const[bookingData, setBookingData] = useState(getLocalStorageData());
+const[slotsData, setSlotsData] = useState([])
 const dateConversion = (n) =>{
   let date = new Date();
   let dateArr = date.toString().split(" ")
@@ -24,7 +26,10 @@ const dateConversion = (n) =>{
   let formattedDate = `${dateArr[0]}, ${day} ${dateArr[1]}`
   return formattedDate;
 }
-const slotDate = (date) =>{
+const slotDate = (date,data) =>{
+  let slots = availableSlotTime.filter(day => Object.keys(day)[0] === data.day);
+  let allSlots = Object.values(slots[0]);
+  setSlotsData(allSlots[0])
   if(date === 'Today'){
     let newDate = dateConversion(0);
     setBookingDate(newDate)
@@ -83,7 +88,8 @@ useEffect(() =>{
         <div className='divider'></div>
         <SlotCarausal bookingDate={slotDate}/>
         <div className='row g-4 mt-2'>
-            <div className='col-2'>Morning</div>
+          {slotsData.map(item => (<div className='col-2'><div className={item === 'Morning' || item === 'Afternoon' || item === 'Evening' || item === '' ? (''):('time')} onClick={() => bookingTimeHandler(item)}>{item}</div></div>))}
+            {/* <div className='col-2'>Morning</div>
             <div className='col-2'><div className='time' onClick={() => bookingTimeHandler('10:00AM')}>10:00AM </div></div>
             <div className='col-2'><div className='time' onClick={() => bookingTimeHandler('11:00AM')}>11:00AM</div></div>
             <div className='col-2'></div>
@@ -100,7 +106,7 @@ useEffect(() =>{
             <div className='col-2'></div>
             <div className='col-2'></div>
             <div className='col-2'></div>
-            <div className='col-2'><div className='time' onClick={() => bookingTimeHandler('07:00PM')}>07:00PM</div></div>
+            <div className='col-2'><div className='time' onClick={() => bookingTimeHandler('07:00PM')}>07:00PM</div></div> */}
         </div>
         </div>) : ('')}
     </div>

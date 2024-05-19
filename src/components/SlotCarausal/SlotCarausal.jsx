@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import {slotAvailable} from '../../constant/data'
 // import './styles.css';
-
+import styles from './slot.module.css';
 // import required modules
 import { Pagination,Navigation } from 'swiper/modules';
 import CarauselLeftBtn from './CarauselLeftBtn';
@@ -45,7 +45,7 @@ const SlotCarausal = ({bookingDate}) => {
   const dateHandler = (currDate,d) =>{
     slotAvailable.forEach(item => item.isActive = false);
     d.isActive = !d.isActive;
-    bookingDate(currDate);
+    bookingDate(currDate,d);
   }
   return (
 <>
@@ -54,7 +54,7 @@ const SlotCarausal = ({bookingDate}) => {
         spaceBetween={30}
         initialSlide={0}
         modules={[Navigation]}
-        className="mySwiper"
+        className={styles.mySwiper}
       >
         <Controls data = {slotAvailable} />
         <CarauselLeftBtn />
