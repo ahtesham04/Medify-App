@@ -13,8 +13,8 @@ const CarauselLeftBtn = () => {
         })
     },[])
   return (
-    <div className='leftBtn'>
-       <LeftArrow onClick={() => swiper.slidePrev()}/>
+    <div className='leftBtn' onClick={() => swiper.slidePrev()}>
+       <LeftArrow />
     </div>
   )
 }

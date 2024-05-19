@@ -14,8 +14,8 @@ const CarauselRightBtn = () => {
         })
     },[])
   return (
-    <div className='rightBtn'>
-      <RightArrow onClick={() => swiper.slideNext()}/>
+    <div className='rightBtn'  onClick={() => swiper.slideNext()}>
+      <RightArrow />
     </div>
   )
 }
