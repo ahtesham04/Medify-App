@@ -24,7 +24,7 @@ const MyBooking = () => {
         <p className='bookingText'>MyBooking</p>
         <div className='searchBar d-flex'>
         <input type='text' placeholder='Search By Hospital' className='headerSearch'/>
-        <button className='searchB'><img src={sIcon} />Search</button>
+        <button className='searchB'><img src={sIcon} alt="search icon"/>Search</button>
         </div>
         </div>
         </div>
@@ -32,7 +32,7 @@ const MyBooking = () => {
   {/* <h2 className='headerText'>{totalMedical} medical centers available in {stateName}</h2> */}
   <div className='row'>
   <div className='col-8'>
-    {bookingData.length>0 ? (bookingData.map(item => <BookingCard data={item} />)) : ('No Data Available')}
+    {bookingData.length>0 ? (bookingData.map((item ,i) => <BookingCard data={item} key={i} />)) : ('No Data Available')}
   </div>
   <div className='col-4'>
     <div className='card'>

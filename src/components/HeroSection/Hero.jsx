@@ -8,14 +8,7 @@ const Hero = () => {
     <div className='container'>
     <div className='row align-items-center'>
       <div className='col-lg-6'>
-        {/* <div className='headingContent'>
-        <h2 className='heading'>Skip the travel! Find Online</h2>
-        <h1 className='subHeading'>Medical Centers</h1>
-        </div> */}
-        {/* <h1  className='heading'>Skip the travel! Find Online <br/>
-        <span className='subHeading'>Medical</span> <span>Centers</span>
-        </h1> */}
-        <img src={headingImg}/>
+        <img src={headingImg} alt='hero img'/>
         <p className='headingContent'>Connect instantly with a 24x7 specialist or choose to video visit a particular doctor.</p>
         <button className='heroBtn'>Find Center</button>
       </div>

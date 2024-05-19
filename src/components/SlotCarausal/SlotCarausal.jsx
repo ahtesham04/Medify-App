@@ -60,15 +60,6 @@ const SlotCarausal = ({bookingDate}) => {
         <CarauselLeftBtn />
         <CarauselRightBtn />
         {slotAvailable.map(d => <SwiperSlide className={d.isActive ? ("activeTab"):("tab")} onClick={() => dateHandler(getDateValue(d.date),d)}>{getDateValue(d.date)}<p className='slotText'>{d.slotCount} slots available</p></SwiperSlide>)}
-        {/* <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide> */}
       </Swiper>
     </>
   )

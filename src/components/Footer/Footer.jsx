@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <div>
       <div className='footer1'>
-        <img src={footerImg} className='fImg' alt='Footer Image'/>
+        <img src={footerImg} className='fImg' alt='Footer Img'/>
       </div>
       <div className='footer2'>
         <div className='row'>
@@ -31,12 +31,12 @@ const Footer = () => {
             </div>
             <div className='col-9'>
                 <div className='row g-3'>
-                {footerList.map(item => <div className='col-4' style={{color:"#fff"}}><img src={arrow} alt='arrow img'  style={{marginRight:"8px"}}/>{item}</div>)}
+                {footerList.map((item,i) => <div className='col-4' key={i} style={{color:"#fff"}}><img src={arrow} alt='arrow img'  style={{marginRight:"8px"}}/>{item}</div>)}
                 </div>
             </div>
         </div>
         <hr/>
-      <p className='para'>Copyright ©2023 Surya Nursing Home.com. All Rights Reserved</p>
+      <p className='paraFooter'>Copyright ©2023 Surya Nursing Home.com. All Rights Reserved</p>
       </div>
     </div>
   )

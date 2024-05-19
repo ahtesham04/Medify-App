@@ -15,7 +15,7 @@ const Family = () => {
                    We treat all enquiries sensitively and in the strictest confidence.</p>
             </div>
             <div className='col-6 familyRight'>
-                <img src={familyImg}/>
+                <img src={familyImg} alt='family img'/>
             </div>
         </div>
       

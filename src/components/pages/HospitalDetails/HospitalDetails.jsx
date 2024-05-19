@@ -17,19 +17,26 @@ const HospitalDetails = () => {
   const[cityList, setCityList] = useState([]);
   const[selectedState, setSelectedState] = useState('')
   const[selectedCity, setSelectedCity] = useState('')
-  // const[hospitalData, setHospitalData] = useState([])
-// const navigate = useNavigate()
+  
   const getStateList = async() =>{
-    const res = await fetch('https://meddata-backend.onrender.com/states')
+    try {
+      const res = await fetch('https://meddata-backend.onrender.com/states')
     const data = await res.json();
 console.log(data)
     setStateList(data)
+    } catch (error) {
+      console.log(error)
+    }
   }
 const getCitiesList = async(stateName) =>{
-  const res = await fetch(`https://meddata-backend.onrender.com/cities/${stateName}`)
+  try {
+    const res = await fetch(`https://meddata-backend.onrender.com/cities/${stateName}`)
   const data = await res.json();
 console.log(data)
   setCityList(data)
+  } catch (error) {
+    console.log(error)
+  }
 }
   const stateHandler = (e) =>{
     let dropdownValue =e.target.value 
@@ -40,11 +47,13 @@ const cityHandler = (e) =>{
   setSelectedCity(e.target.value)
 }
 const getHospitalData = async() =>{
-  const res = await fetch(`https://meddata-backend.onrender.com/data?state=${selectedState}&city=${selectedCity}`)
-  const data = await res.json()
-  // navigate('/hospitals',{state:data})
-  // console.log(data)
-  setMedicalCenters(data)
+  try {
+    const res = await fetch(`https://meddata-backend.onrender.com/data?state=${selectedState}&city=${selectedCity}`)
+    const data = await res.json()
+    setMedicalCenters(data)
+  } catch (error) {
+    console.log(error)
+  }
 }
   useEffect(()=>{
       getStateList()
@@ -65,14 +74,14 @@ const getHospitalData = async() =>{
           <img src={locationIcon} alt="search icon" className='sIcon2'/>
           <select value={selectedState} onChange={stateHandler} className='dropdown2'>
             <option value='' disabled>State</option>
-            {stateList.map(item => <option value={item}>{item}</option>)}
+            {stateList.map((item,i) => <option key={i} value={item}>{item}</option>)}
           </select>
         </div>
         <div className='searchField'>
         <img src={locationIcon} alt="search icon" className='sIcon2'/>
           <select value={selectedCity} onChange={cityHandler} className='dropdown3'>
             <option value='' disabled>City</option>
-            {cityList.map(item => <option value={item}>{item}</option>)}
+            {cityList.map((item,i) => <option key={i} value={item}>{item}</option>)}
           </select>
           </div>
           <div>
@@ -90,7 +99,7 @@ const getHospitalData = async() =>{
     <p className='notify'><img src={vIcon} alt='vIcon' />Book appointments with minimum wait-time & verified doctor details</p>
     <div className='row'>
     <div className='col-8'>
-      {medicalCenters.length>0 ? (medicalCenters.map(item => <MedicalCard data={item} />)) : ('No Data Available')}
+      {medicalCenters.length>0 ? (medicalCenters.map((item,i) => <MedicalCard data={item} key={i}/>)) : ('No Data Available')}
     </div>
     <div className='col-4'>
       <div className='card'>

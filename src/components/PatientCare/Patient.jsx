@@ -9,7 +9,7 @@ const Patient = () => {
     <div className='container'>
         <div className='row'>
             <div className='col-6 patientImg'>
-                <img  src={pcare}/>
+                <img  src={pcare} alt="para icon"/>
 
             </div>
              <div className='col-6 d-flex flex-column justify-content-center'>
@@ -18,17 +18,17 @@ const Patient = () => {
                 <p className='para'>Our goal is to deliver quality of care in a courteous, respectful, and compassionate manner. 
                    We hope you will allow us to care for you and strive to be the first and best choice for healthcare.</p>
                    <div className='iconContent'>
-                    <img className='iconImg' src={icons}/>
+                    <img className='iconImg' src={icons} alt="para icon"/>
                     <p >Stay Updated About Your Health</p>
                    </div>
 
                    <div className='iconContent'>
-                    <img className='iconImg' src={icons}/>
+                    <img className='iconImg' src={icons} alt="para icon"/>
                     <p > Check Your Results Online</p>
                    </div>
 
                   <div className='iconContent'>
-                    <img className='iconImg' src={icons}/>
+                    <img className='iconImg' src={icons} alt="para icon"/>
                     <p>Manage Your Appointments</p>
                    </div>
             </div>

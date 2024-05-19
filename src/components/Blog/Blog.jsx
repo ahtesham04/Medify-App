@@ -12,13 +12,13 @@ const Blog = () => {
         
         <div className='row'>
             <div className='col-4'>
-                <img className='cardImg' src={blogCard}/>
+                <img className='cardImg' src={blogCard} alt='blog img'/>
             </div>
             <div className='col-4'>
-                <img className='cardImg' src={blogCard}/>
+                <img className='cardImg' src={blogCard} alt='blog img'/>
             </div>
             <div className='col-4'>
-                <img className='cardImg' src={blogCard}/>
+                <img className='cardImg' src={blogCard} alt='blog img'/>
             </div>
 
             </div> 

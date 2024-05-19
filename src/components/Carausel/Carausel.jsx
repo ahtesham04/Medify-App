@@ -28,7 +28,7 @@ const Carausel = ({allData,type}) => {
         modules={[Pagination]}
         className="mySwiper"
       >
-        {allData.map(items => (<SwiperSlide className={type==='specialist' ? ('swiperSlide'):('')}><Card data={items} type={type}/></SwiperSlide>))}
+        {allData.map((items,i) => (<SwiperSlide key={i} className={type==='specialist' ? ('swiperSlide'):('')}><Card data={items} type={type}/></SwiperSlide>))}
       </Swiper>
     </>
   )

@@ -7,7 +7,7 @@ const Navbar = ({type}) => {
   return (
     <div className='container'>
     <div className='d-flex navContent align-items-center'>
-      <div className='col-4'><Link to="/"><img src={logoImg} /></Link></div>
+      <div className='col-4'><Link to="/"><img src={logoImg} alt='logo img'/></Link></div>
       <div className='d-flex justify-content-between col-8 align-items-center'>
         <div className='navList'><Link to="/hospitals">Find Doctors</Link></div>
         <div className='navList'>Hospitals</div>

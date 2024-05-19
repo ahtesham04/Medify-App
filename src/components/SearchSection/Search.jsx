@@ -17,16 +17,25 @@ const Search = () => {
   const[hospitalData, setHospitalData] = useState([])
 const navigate = useNavigate()
   const getStateList = async() =>{
-    const res = await fetch('https://meddata-backend.onrender.com/states')
-    const data = await res.json();
-console.log(data)
-    setStateList(data)
+    try {
+      const res = await fetch('https://meddata-backend.onrender.com/states')
+      const data = await res.json();
+  console.log(data)
+      setStateList(data)
+    } catch (error) {
+      console.log(error)
+    }
+   
   }
 const getCitiesList = async(stateName) =>{
-  const res = await fetch(`https://meddata-backend.onrender.com/cities/${stateName}`)
-  const data = await res.json();
-console.log(data)
-  setCityList(data)
+  try {
+    const res = await fetch(`https://meddata-backend.onrender.com/cities/${stateName}`)
+    const data = await res.json();
+  console.log(data)
+    setCityList(data)
+  } catch (error) {
+    console.log(error)
+  }
 }
   const stateHandler = (e) =>{
     let dropdownValue =e.target.value 
@@ -37,10 +46,14 @@ const cityHandler = (e) =>{
   setSelectedCity(e.target.value)
 }
 const getHospitalData = async() =>{
-  const res = await fetch(`https://meddata-backend.onrender.com/data?state=${selectedState}&city=${selectedCity}`)
+  try {
+    const res = await fetch(`https://meddata-backend.onrender.com/data?state=${selectedState}&city=${selectedCity}`)
   const data = await res.json()
   navigate('/hospitals',{state:data})
   console.log(data)
+  } catch (error) {
+    console.log(error)
+  }
 }
   useEffect(()=>{
       getStateList()
@@ -53,14 +66,14 @@ const getHospitalData = async() =>{
           <img src={searchIcon} alt="search icon" className='sIcon'/>
           <select value={selectedState}  className='dropdown' onChange={stateHandler}>
             <option value='' disabled>State</option>
-            {stateList.map(item => <option value={item}>{item}</option>)}
+            {stateList.map((item,i) => <option key={i} value={item}>{item}</option>)}
           </select>
         </div>
         <div className='searchField'>
         <img src={searchIcon} alt="search icon" className='sIcon'/>
           <select className='dropdown' value={selectedCity} onChange={cityHandler}>
             <option value='' disabled>City</option>
-            {cityList.map(item => <option value={item}>{item}</option>)}
+            {cityList.map((item,i) => <option key={i} value={item}>{item}</option>)}
           </select>
           </div>
           <div>
