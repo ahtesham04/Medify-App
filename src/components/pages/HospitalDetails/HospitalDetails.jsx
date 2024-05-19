@@ -103,7 +103,7 @@ const getHospitalData = async() =>{
     </div>
     <div className='col-4'>
       <div className='card'>
-      <img src={sensodyne} alt='sensodyne'/>
+      <img src={sensodyne} height={292} alt='sensodyne'/>
       </div>
       
     </div>

@@ -23,7 +23,7 @@ const BookingCard = ({data}) => {
             <p style={{marginBottom:"0px"}}>Smilessence Center for Advanced Dentistry + 1</p>
             <p style={{marginBottom:"0px"}}>more</p>
             {/* <p><span className='freeText'>FREE</span> <img src={rupees} alt='rupee' style={{marginBottom:"3px"}}/><s className='fees'>500</s><span className='consultText'>Consultation fee at clinic</span></p> */}
-            <div className='likes'><img  src={like} alt='like' style={{margin:"5px"}}/>5</div>
+            <div className='likes2'><img  src={like} alt='like' style={{margin:"5px"}}/>5</div>
         </div>
         <div className='col-4 d-flex justify-content-evenly'>
           <div className='timeBox'>{data.time}</div>

@@ -64,7 +64,7 @@ useEffect(() =>{
 },[bookingData])
   return (
     <div className='card medicalCard' >
-        <div className='row' style={{gap:"18px"}} onClick={() => setShowBooking(!showBooking)}>
+        <div className='row' style={{gap:"28px"}} onClick={() => setShowBooking(!showBooking)}>
         <div className='col-2'>
           <img src={medical} alt='medicals' />
         </div>
