@@ -13,15 +13,15 @@ const BookingCard = ({data}) => {
     console.log(oldDate)
   return (
     <div className='card medicalCard' >
-      <div className='row' style={{gap:"18px"}}>
+      <div className='row' style={{gap:"28px"}}>
         <div className='col-2'>
           <img src={medical} alt='medicals' />
         </div>
         <div className='col-5'>
             <h5 className='hName'>{data.hospital}</h5>
             <h6>{data.city},{data.state}</h6>
-            <p>Smilessence Center for Advanced Dentistry + 1</p>
-            <p>more</p>
+            <p style={{marginBottom:"0px"}}>Smilessence Center for Advanced Dentistry + 1</p>
+            <p style={{marginBottom:"0px"}}>more</p>
             {/* <p><span className='freeText'>FREE</span> <img src={rupees} alt='rupee' style={{marginBottom:"3px"}}/><s className='fees'>500</s><span className='consultText'>Consultation fee at clinic</span></p> */}
             <div className='likes'><img  src={like} alt='like' style={{margin:"5px"}}/>5</div>
         </div>

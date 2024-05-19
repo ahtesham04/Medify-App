@@ -71,8 +71,8 @@ useEffect(() =>{
         <div className='col-5'>
             <h5 className='hName'>{data['Hospital Name']}</h5>
             <h6>{data.City},{data.State}</h6>
-            <p>Smilessence Center for Advanced Dentistry + 1</p>
-            <p>more</p>
+            <p style={{marginBottom:"0px"}}>Smilessence Center for Advanced Dentistry + 1</p>
+            <p style={{marginBottom:"0px"}}>more</p>
             <p><span className='freeText'>FREE</span> <img src={rupees} alt='rupee' style={{marginBottom:"3px"}}/><s className='fees'>500</s><span className='consultText'>Consultation fee at clinic</span></p>
             <div className='likes'><img  src={like} alt='like' style={{margin:"5px"}}/>{data['Hospital overall rating']}</div>
         </div>

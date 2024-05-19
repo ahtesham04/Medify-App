@@ -1,6 +1,6 @@
 .medicalCard{
     min-height: 269px;
-    width: 850px;
+    /* width: 850px; */
     border-radius: 15px;
     padding: 50px 35px 12px 35px;
     margin-bottom: 20px;

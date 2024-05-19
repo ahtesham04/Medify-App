@@ -1,6 +1,6 @@
 .medicalCard{
     min-height: 269px;
-    width: 850px;
+    /* width: 850px; */
     border-radius: 15px;
     padding: 50px 35px 12px 35px;
     margin-bottom: 20px;
@@ -128,7 +128,7 @@ position: absolute;
 }
 
 .timeBox{
-    width: 84px;
+    /* width: 84px; */
     height: 31.59px;
     top: 63px;
     left: 525.55px;
@@ -146,7 +146,7 @@ color: #2AA7FF;
 }
 
 .dateBox{
-    width: 128px;
+    /* width: 128px; */
 height: 32px;
 top: 63px;
 left: 623.55px;
